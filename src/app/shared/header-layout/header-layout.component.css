@@ -1,0 +1,29 @@
+.header-logo img {
+  width: 120px;
+}
+.group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.8rem;
+  box-shadow: rgb(0, 0, 0, 0.15) 1px 1px 10px 0px;
+}
+
+.group-header .group-navigation {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.group-header .btn-navigation {
+  background-image: linear-gradient(to right, #d434b0, #8029fc);
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.group-header .btn-navigation img {
+  mix-blend-mode: multiply;
+}

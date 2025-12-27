@@ -1,7 +1,7 @@
-import { Component, DoCheck, OnDestroy, OnInit, signal } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { currencyPipe } from '../shared/pipes/CurrencyPipe';
-import { CommonModule, NgClass } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { NgIf } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ProductItem } from '../shared/types/product-item';

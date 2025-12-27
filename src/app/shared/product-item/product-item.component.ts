@@ -1,17 +1,8 @@
-import {
-  Component,
-  Input,
-  OnChanges,
-  OnDestroy,
-  Output,
-  signal,
-  SimpleChanges,
-} from '@angular/core';
+import { Component, Input, OnDestroy, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { currencyPipe } from '../../shared/pipes/CurrencyPipe';
 import { upperCasePipe } from '../../shared/pipes/upperCasePipe';
-import { CommonModule, NgClass, NgFor } from '@angular/common';
-import { NgIf } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ProductItem } from '../types/product-item';
 import { EventEmitter } from '@angular/core';

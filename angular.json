@@ -18,6 +18,7 @@
           "builder": "@angular/build:application",
           "options": {
             "outputPath": "dist/angular-basic-project",
+            "prerender": false,
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/assets", "src/favicon.ico"],

@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper-cart {
+  background-image: linear-gradient(to right, #d434b0, #8029fc);
+  height: calc(100vh - 55px);
+}
+
+.wrapper-cart h1 {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

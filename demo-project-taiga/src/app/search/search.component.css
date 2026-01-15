@@ -1,0 +1,16 @@
+/* Container bao quanh 3 ô input */
+.search-grid {
+  display: grid;
+  /* Chia làm 3 cột bằng nhau (1fr = 1 fraction) */
+  grid-template-columns: repeat(3, 1fr);
+  /* Khoảng cách giữa các ô */
+  gap: 16px;
+  width: 100%;
+}
+
+/* Container chứa nút Search (căn phải) */
+.search-actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end; /* Đẩy nút sang phải */
+}

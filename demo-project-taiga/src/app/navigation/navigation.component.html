@@ -1,0 +1,23 @@
+<header tuiNavigationHeader>
+  <div tuiGroup [collapsed]="true" [style.margin]="'auto'">
+    <label appearance="" tuiBlock="s" routerLink="/search">
+      <input tuiBlock="s" type="radio" value="basic" [(ngModel)]="current" />
+      Search
+    </label>
+    <label appearance="" tuiBlock="s" routerLink="/form">
+      <input tuiBlock="s" type="radio" value="input" [(ngModel)]="current" />
+      Form
+    </label>
+    <label appearance="" tuiBlock="s">
+      <input tuiBlock="s" type="radio" value="card" [(ngModel)]="current" />
+      Card
+    </label>
+  </div>
+</header>
+<main tuiNavigationMain>
+  <header tuiSubheader>
+    <ng-container *ngIf="current === 'basic'"> </ng-container>
+    <ng-container *ngIf="current === 'input'"> </ng-container>
+    <ng-container *ngIf="current === 'card'"> </ng-container>
+  </header>
+</main>

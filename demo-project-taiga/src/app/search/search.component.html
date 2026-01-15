@@ -1,0 +1,45 @@
+<search tuiSearch>
+  <form [formGroup]="form">
+    <fieldset formArrayName="filters">
+      <tui-search-filters>
+        Users
+        <button tuiButton type="reset">Reset</button>
+        <ng-container class="tui-space_vertical-4">
+          <tui-textfield *tuiItem>
+            <label tuiLabel>UserName</label>
+            <input placeholder="UserName" tuiTextfield [formControlName]="0" />
+          </tui-textfield>
+          <tui-textfield *tuiItem>
+            <label tuiLabel>Email</label>
+            <input
+              placeholder="Email"
+              tuiTextfield
+              [formControlName]="1"
+              [tuiValidator]="validator"
+            />
+            <tui-error *ngIf="filters.at(1).errors?.['email'] && filters.at(1).touched">
+              Email khong hop le
+            </tui-error>
+          </tui-textfield>
+          <tui-textfield *tuiItem>
+            <label tuiLabel>Enabled</label>
+            <input placeholder="Enabled" tuiTextfield [formControlName]="2" />
+          </tui-textfield>
+          <tui-textfield *tuiItem>
+            <label tuiLabel>PageNo</label>
+            <input placeholder="PageNo" tuiTextfield [formControlName]="3" />
+          </tui-textfield>
+          <tui-textfield *tuiItem>
+            <label tuiLabel>PageSize</label>
+            <input placeholder="PageSize" tuiTextfield [formControlName]="4" />
+          </tui-textfield>
+        </ng-container>
+      </tui-search-filters>
+      <button tuiButton type="button" (click)="handleClick()">Search</button>
+    </fieldset>
+  </form>
+</search>
+<p>
+  <code>{{ form.value | json }}</code>
+</p>
+<p>username: {{ username }}</p>
